@@ -1,0 +1,81 @@
+.navbar {
+  display: flex;
+  background-color: #302D48;
+}
+ol {
+  list-style-type: none;
+}
+ol li {
+  display: inline-block;
+}
+ol li a {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  color: #fff;
+  text-decoration: none;
+  margin: 30px;
+}
+.navlinks ol {
+  padding: 0;
+}
+@media (min-width: 701px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .navbar img {
+    margin-left: 30px;
+  }
+  .navlinks {
+    align-self: flex-end;
+    margin-right: 60px;
+  }
+}
+@media (max-width: 700px) {
+  .navbar {
+    display: block;
+    justify-content: center;
+  }
+  .navlinks ol {
+    margin: 0;
+    justify-content: center;
+  }
+  ol li {
+    margin: 25px;
+  }
+  ol li a {
+    color: #fff;
+  }
+}
+.home_body {
+  display: flex;
+}
+.react_logo {
+  height: 80vmin;
+  margin-top: 20px;
+  pointer-events: none;
+}
+@media (max-width: 700px) {
+  .home_body {
+    display: block;
+  }
+  .hbody_left {
+    justify-content: center;
+  }
+  .react_logo {
+    height: 55vmin;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .react_logo {
+    animation: react_logo_spin infinite 20s linear;
+  }
+}
+@keyframes react_logo_spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
