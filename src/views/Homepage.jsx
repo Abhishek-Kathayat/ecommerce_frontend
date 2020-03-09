@@ -8,8 +8,8 @@ import Signup from '../components/signupcomponent.jsx';
 function Home() {
   const [state, setState] = useState({ login: true, signup: false });
   return (
-    <div class="home_header">
-      <div class="navbar">
+    <div class="home_layout">
+      <div class="home_navbar">
         <img src={logo} height="120" width="120"/>
         <div class="navlinks">
           <ol>

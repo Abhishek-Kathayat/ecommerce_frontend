@@ -1,4 +1,4 @@
-.navbar {
+.home_navbar {
   display: flex;
   background-color: #302D48;
 }
@@ -8,7 +8,7 @@ ol {
 ol li {
   display: inline-block;
 }
-ol li a {
+ol li a, ol li a:hover {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-size: 17px;
@@ -20,10 +20,10 @@ ol li a {
   padding: 0;
 }
 @media (min-width: 701px) {
-  .navbar {
+  .home_navbar {
     justify-content: space-between;
   }
-  .navbar img {
+  .home_navbar img {
     margin-left: 30px;
   }
   .navlinks {
@@ -32,7 +32,7 @@ ol li a {
   }
 }
 @media (max-width: 700px) {
-  .navbar {
+  .home_navbar {
     display: block;
     justify-content: center;
   }
@@ -76,8 +76,20 @@ ol li a {
   .hbody_right {
     width: 50%;
   }
+  .hbody_right {
+    position: relative;
+  }
+  .login_signup_card {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 20px;
+  }
 }
-@media (max-width: 700px) {
+@media (max-width: 700px) and (min-width: 401px)  {
   .home_body {
     display: block;
   }
@@ -88,21 +100,43 @@ ol li a {
   .react_logo {
     height: 55vmin;
   }
+  .hbody_right {
+    position: relative;
+  }
+  .login_signup_card {
+    width: 400px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding: 20px;
+  }
 }
-.hbody_right {
-  position: relative;
+@media (max-width: 400px)  {
+  .home_body {
+    display: block;
+  }
+  .hbody_left {
+    display: flex;
+    justify-content: center;
+  }
+  .react_logo {
+    height: 55vmin;
+  }
+  .login_signup_card {
+    margin: 30px;
+    padding: 20px;
+  }
 }
 .login_signup_card {
-  display: block;
-  position: absolute;
-  left: 50%;
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .card_buttons span {
   display: inline-block;
-  margin: 20px;
+  padding: 15px;
+  width: 50%;
+  border-bottom: 2px solid #fff;
 }
 .card_render {
   margin-top: 10px;
