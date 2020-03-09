@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Homepage.css';
 import logo from '../assets/UI_logo.png';
 import reactlogo from '../assets/logo.svg';
+import Login from '../components/logincomponent.jsx';
+import Signup from '../components/signupcomponent.jsx';
 
 function Home() {
+  const [state, setState] = useState({ login: true, signup: false });
   return (
     <div class="home_header">
       <div class="navbar">
@@ -24,13 +27,15 @@ function Home() {
         <div class="hbody_right">
           <div class="login_signup_card">
             <div class="card_buttons">
-              <span id="login_tab" onClick={self.switch.bind(null, "login")} className={self.state.login ? "white" : "green"}> Login </span>
-              <span id="signup_tab" onClick={self.switch.bind(null, "signup")} className={self.state.signup ? "white" : "green"}> Signup </span>
+             <span id="login" onClick={()=> setState({ login: true, signup: false })} className={state.login ? "green":"white"}>Login</span>
+             <span id="signup" onClick={()=> setState({ login: false, signup: true })} className={state.signup ? "green":"white"}>Signup</span>
             </div>
-            { self.state.login ? <Login/> : null }
-            { self.state.signup ? <Signup/> : null }
+            <div class="card_render">
+              { state.login ? <Login/> : null }
+              { state.signup ? <Signup/> : null }
+            </div>
           </div>
-        <div>
+        </div>
       </div>
     </div>
   );

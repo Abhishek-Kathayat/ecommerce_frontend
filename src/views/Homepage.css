@@ -47,6 +47,7 @@ ol li a {
     color: #fff;
   }
 }
+
 .home_body {
   display: flex;
 }
@@ -54,17 +55,6 @@ ol li a {
   height: 80vmin;
   margin-top: 20px;
   pointer-events: none;
-}
-@media (max-width: 700px) {
-  .home_body {
-    display: block;
-  }
-  .hbody_left {
-    justify-content: center;
-  }
-  .react_logo {
-    height: 55vmin;
-  }
 }
 @media (prefers-reduced-motion: no-preference) {
   .react_logo {
@@ -78,4 +68,42 @@ ol li a {
   to {
     transform: rotate(360deg);
   }
+}
+@media (min-width: 701px) {
+  .hbody_left {
+    width: 50%;
+  }
+  .hbody_right {
+    width: 50%;
+  }
+}
+@media (max-width: 700px) {
+  .home_body {
+    display: block;
+  }
+  .hbody_left {
+    display: flex;
+    justify-content: center;
+  }
+  .react_logo {
+    height: 55vmin;
+  }
+}
+.hbody_right {
+  position: relative;
+}
+.login_signup_card {
+  display: block;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  padding: 15px;
+}
+.card_buttons span {
+  display: inline-block;
+  margin: 20px;
+}
+.card_render {
+  margin-top: 10px;
 }
