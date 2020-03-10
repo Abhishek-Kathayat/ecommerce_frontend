@@ -6,7 +6,7 @@ function Signup() {
     <Form>
       <Form.Group controlId="formName">
         <Form.Label>Name</Form.Label>
-        <Form.Control required type="text" placeholder="Name" defaultValue="John Doe"/>
+        <Form.Control required type="text" placeholder="Name"/>
       </Form.Group>
       <Form.Group controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>

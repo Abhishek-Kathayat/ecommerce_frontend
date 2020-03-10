@@ -27,8 +27,10 @@ function Home() {
         <div class="hbody_right">
           <div class="login_signup_card">
             <div class="card_buttons">
-             <span id="login" onClick={()=> setState({ login: true, signup: false })} className={state.login ? "green":"white"}>Login</span>
-             <span id="signup" onClick={()=> setState({ login: false, signup: true })} className={state.signup ? "green":"white"}>Signup</span>
+             <span id="login" onClick={()=> setState({ login: true, signup: false })}
+              className={state.login ? "ncolor":"ocolor"}>Login</span>
+             <span id="signup" onClick={()=> setState({ login: false, signup: true })}
+              className={state.signup ? "ncolor":"ocolor"}>Signup</span>
             </div>
             <div class="card_render">
               { state.login ? <Login/> : null }
