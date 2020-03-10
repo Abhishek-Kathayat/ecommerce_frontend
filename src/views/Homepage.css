@@ -52,7 +52,7 @@ ol li a, ol li a:hover {
   display: flex;
 }
 .react_logo {
-  height: 80vmin;
+  height: 65vmin;
   margin-top: 20px;
   pointer-events: none;
 }
@@ -72,6 +72,38 @@ ol li a, ol li a:hover {
 @media (min-width: 701px) {
   .hbody_left {
     width: 50%;
+    height: 80vmin;
+    position: relative;
+  }
+  .hbody_left_content {
+    color: #320D48;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    -ms-transform: translate(-20%, -50%);
+    transform: translate(-20%, -50%);
+    text-align: left;
+  }
+  .hbody_left_content h1 {
+    font-weight: 200;
+    font-size: 55px;
+  }
+  .hbody_left_content h3 {
+    font-weight: 200;
+    font-size: 35px;
+  }
+  .hbody_left_content h2 {
+    margin-top: 50px;
+    font-weight: 200;
+    font-size: 35px;
+  }
+  .hbody_left_logo {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
   .hbody_right {
     width: 50%;
@@ -86,7 +118,7 @@ ol li a, ol li a:hover {
     top: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    padding: 20px;
+    padding: 25px;
   }
 }
 @media (max-width: 700px) and (min-width: 401px)  {

@@ -10,18 +10,23 @@ function Home() {
   return (
     <div class="home_layout">
       <div class="home_navbar">
-        <img src={logo} height="120" width="120"/>
+        <img src={logo} height="120" width="120" alt="main_logo"/>
         <div class="navlinks">
           <ol>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact Us</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contactus">Contact Us</a></li>
           </ol>
         </div>
       </div>
       <div class="home_body">
         <div class="hbody_left">
           <div class="hbody_left_logo">
-            <img class="react_logo" src={reactlogo}/>
+            <img class="react_logo" src={reactlogo} alt="react_logo"/>
+          </div>
+          <div class="hbody_left_content">
+            <h1> Forlan CMS </h1>
+            <h3> Content Management System </h3>
+            <h2> built using React </h2>
           </div>
         </div>
         <div class="hbody_right">
