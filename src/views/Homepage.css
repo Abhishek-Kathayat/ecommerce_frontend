@@ -155,15 +155,13 @@ ol li a, ol li a:hover {
     height: 55vmin;
   }
   .hbody_right {
-    position: relative;
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
   }
   .login_signup_card {
-    width: 400px;
+    width: 330px;
     display: block;
-    position: absolute;
-    left: 50%;
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
     padding: 20px;
   }
 }
@@ -233,4 +231,34 @@ ol li a, ol li a:hover {
 }
 .card_render {
   margin-top: 20px;
+}
+@media (min-width: 701px) {
+  .home_footer {
+    margin-top: 20px;
+  }
+  .footer_holder {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+}
+@media (max-width: 700px) {
+  .home_footer {
+    margin-top: 60px;
+  }
+  .footer_holder {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+}
+.home_footer {
+  background-color: #302D48;
+}
+.footer_holder h1 {
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 0;
+  font-size: 18px;
+  color: #fff;
 }

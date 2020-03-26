@@ -44,6 +44,12 @@ function Home() {
           </div>
         </div>
       </div>
+      <div class="home_footer">
+        <div class="footer_holder">
+          <img src={logo} alt="main_logo" height="100" width="100"/>
+          <h1>FORLAN CMS</h1>
+        </div>
+      </div>
     </div>
   );
 }
