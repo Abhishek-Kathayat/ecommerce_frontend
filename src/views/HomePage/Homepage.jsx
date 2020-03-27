@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './Homepage.css';
-import logo from '../assets/UI_logo.png';
-import reactlogo from '../assets/logo.svg';
-import Login from '../components/logincomponent.jsx';
-import Signup from '../components/signupcomponent.jsx';
+import logo from '../../assets/UI_logo.png';
+import reactlogo from '../../assets/logo.svg';
+import Login from '../../components/auth/logincomponent.jsx';
+import Signup from '../../components/auth/signupcomponent.jsx';
 
 function Home() {
   const [state, setState] = useState({ login: true, signup: false });
